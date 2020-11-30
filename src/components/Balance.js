@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {TransactionContext} from "../TransactionContext";
+import { TransactionContext } from "../TransactionContext";
 
 export const Balance = () => {
   const { transactions } = useContext(TransactionContext);
@@ -21,16 +21,33 @@ export const Balance = () => {
     }
     return expense;
   };
+  const bal = getIncome() + getExpense();
+  const sign = () => {
+    if (bal < 0) {
+      return "-";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <div>
       <h4 className="bal-d">Your Balance</h4>
-      <h1 className="bal-u">${getIncome() + getExpense()}</h1>{" "}
+      <h1 className="bal-u">
+        {sign()}${Math.abs(bal)}
+      </h1>
       <div className="inc-exp-main">
-
-          <h4 className="inc-exp">INCOME<br /><span className="income">${getIncome()}</span></h4>
-          <p className="line">|</p>
-          <h4 className="inc-exp">EXPENSE<br /><span className="expense">${Math.abs(getExpense())}</span></h4>
-
+        <h4 className="inc-exp">
+          INCOME
+          <br />
+          <span className="income">${getIncome()}</span>
+        </h4>
+        <p className="line">|</p>
+        <h4 className="inc-exp">
+          EXPENSE
+          <br />
+          <span className="expense">${Math.abs(getExpense())}</span>
+        </h4>
       </div>
     </div>
   );
