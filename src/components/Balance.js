@@ -23,18 +23,14 @@ export const Balance = () => {
   };
   return (
     <div>
-      <h4 className="pad-d">Your Balance</h4>
-      <h1 className="pad-u">${getIncome() + getExpense()}</h1>{" "}
+      <h4 className="bal-d">Your Balance</h4>
+      <h1 className="bal-u">${getIncome() + getExpense()}</h1>{" "}
       <div className="inc-exp-main">
-        <div className="inc-exp-container pad-d">
-          <h4 className="pad-d">INCOME</h4>
-          <h4 className="pad-d">EXPENSE</h4>
-        </div>
 
-        <div className="inc-exp-container pad-u">
-          <h3 className="pad-u income">${getIncome()}</h3>
-          <h3 className="pad-u expense">${Math.abs(getExpense())}</h3>
-        </div>
+          <h4 className="inc-exp">INCOME<br /><span className="income">${getIncome()}</span></h4>
+          <p className="line">|</p>
+          <h4 className="inc-exp">EXPENSE<br /><span className="expense">${getExpense()}</span></h4>
+
       </div>
     </div>
   );
