@@ -29,7 +29,7 @@ export const Balance = () => {
 
           <h4 className="inc-exp">INCOME<br /><span className="income">${getIncome()}</span></h4>
           <p className="line">|</p>
-          <h4 className="inc-exp">EXPENSE<br /><span className="expense">${getExpense()}</span></h4>
+          <h4 className="inc-exp">EXPENSE<br /><span className="expense">${Math.abs(getExpense())}</span></h4>
 
       </div>
     </div>
