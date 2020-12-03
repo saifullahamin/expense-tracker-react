@@ -1,5 +1,5 @@
 # Expense Tracker with ReactJS
 
-A react project done as assignment in learning ReactJS. The app has basic add/delete transactions option with a display of the transactions, current balance and the expenses/income summary. I used Context API, State & Reducer Hooks with deployment on Surge using Github Actions.
+The expense tracker has basic functionalities of add/delete income or expenses with summary of total balance, income and expense. It was done in learning ReactJS, Context API, useState and usReducer Hooks hosted on Surge with Github CI/CD Actions.
 
 Surge Website Link: http://saifullahamin_expensetracker.surge.sh/
