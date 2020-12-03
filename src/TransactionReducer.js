@@ -5,9 +5,9 @@ const TransactionReducer = (state, action) => {
     case "DELETE": {
       let array = [];
       for (let i = 0; i < state.length; i++) {
-          if(state[i].id !== action.payload){
-              array.push(state[i]); 
-          }
+        if (state[i].id !== action.payload) {
+          array.push(state[i]);
+        }
       }
       return array;
     }

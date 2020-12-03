@@ -23,12 +23,12 @@
   font-size: larger;
 }
 .expense {
-  color: rgb(200, 0, 0);    
+  color: rgb(200, 0, 0);
   font-size: larger;
 }
-.inc-exp{
+.inc-exp {
   margin-top: 15px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 .submit-button {
   width: 100%;
@@ -36,9 +36,8 @@
   background-color: #9c88ff;
   color: #fff;
   border: 0;
-  
 }
-.submit-button:hover{
+.submit-button:hover {
   opacity: 0.8;
 }
 input[type="text"],
@@ -50,11 +49,11 @@ input[type="number"] {
   padding: 10px;
   width: 93.5%;
 }
-.transaction-list{
+.transaction-list {
   margin: 0;
   padding: 0;
 }
-.transaction-list > li{
+.transaction-list > li {
   display: flex;
   justify-content: space-between;
   padding: 0px;
@@ -66,15 +65,15 @@ input[type="number"] {
   color: #6b6666;
 }
 .x-button {
-  background-color: #e2d9d9;;
+  background-color: #e2d9d9;
   border: none;
   padding-bottom: 3px;
   font-size: 13px;
   border-radius: 30%;
   opacity: 0.2;
   margin-right: 11px;
-} 
-li:hover .x-button{
+}
+li:hover .x-button {
   opacity: 0.6;
 }
 
@@ -85,13 +84,13 @@ li.plus {
 li.minus {
   border-right: 5px solid #c0392b;
 }
-.bal-u{
+.bal-u {
   margin-top: 0;
 }
-.bal-d{
+.bal-d {
   margin-bottom: 0;
 }
-.line{
+.line {
   font-size: 20px;
   opacity: 0.1;
 }

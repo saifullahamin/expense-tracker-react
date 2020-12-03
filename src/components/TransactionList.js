@@ -18,7 +18,7 @@ export const TransactionList = () => {
               key={transObj.id}
             >
               <div>
-              <button
+                <button
                   className="x-button"
                   onClick={() => deleteTransaction(transObj.id)}
                 >
